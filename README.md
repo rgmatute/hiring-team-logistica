@@ -2,7 +2,7 @@
 
 Hello there candidate! welcome to the development test for the position of junior web developer for CT Funiber Ecuador.
 
-#### Inventory Management Requirimients:
+#### Inventory Management Requirements:
 
 1. Authentication
 2. Product Categorization
