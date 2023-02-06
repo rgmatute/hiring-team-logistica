@@ -1,6 +1,6 @@
 Hello candidate! welcome to the development test for the position of Semi-Senior Developer for CT Funiber Ecuador. We present you with an inventory system development challenge with the requirements detailed below.
 
-#### Inventory management requirements:
+### Inventory management requirements:
 
 1. Authentication
 2. Product categorization
