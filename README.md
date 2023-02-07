@@ -3,7 +3,7 @@ Hello candidate! welcome to the development test for the position of Semi-Senior
 #### Inventory management requirements:
 
 1) Authentication
-	- by a email and password
+	- by email and password
 	- a demo user must be provided
 	- no authorization rules must be added, the demo user has all the abilities
 	
@@ -17,15 +17,15 @@ Hello candidate! welcome to the development test for the position of Semi-Senior
   	- add a form to edit the main attributes such as name, code, and category
 
 3) Product categorization
-	- all categories must be seed in the database
+	- all categories must be seeded in the database
 	- the maintenance (CRUD) for the categories are optional
 	
 4) Product measurement
-	- this features SHOULD BE handle in one single form
+	- this features SHOULD BE handled in one single form
 	- validations are expected, the rules are at your discretion
 	
 5) Stock inquiries
-	- this features SHOULD BE handle in one single form
+	- this features SHOULD BE handled in one single form
 	- validations are expected, the rules are at your discretion
 	
 6) Product change history
