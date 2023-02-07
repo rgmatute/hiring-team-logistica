@@ -2,11 +2,28 @@ Hello candidate! welcome to the development test for the position of Semi-Senior
 
 #### Inventory management requirements:
 
-1. Authentication
-2. Product categorization
-3. Product measurement
-4. Product history
-5. Stock inquiries
+1° Authentication
+	- by a email and password
+	- a demo user must be provided
+	- no authorization rules must be added, the demo user has all the abilities
+2° Products
+	- seed some products examples in the database
+	- add a search form with these filters 
+		- code
+		- name
+		- category
+		- has stock (boolean)
+  - add a form to edit the main attributes such as name, code, and category
+3° Product categorization
+	- all categories must be seed in the database
+	- the maintenance (CRUD) for the categories are optional
+4° Product measurement
+	- this features SHOULD BE handle in one single form
+	- validations are expected, the rules are at your discretion
+5° Stock inquiries
+	- this features SHOULD BE handle in one single form
+	- validations are expected, the rules are at your discretion
+6° Product change history
 
 The information must be stored in a database.
 A non-relational database can be used (optional).
@@ -21,4 +38,4 @@ The design of the system is at the developer's discretion and creativity.
 > The whole project will be checked with Docker Compose, manage your dependencies well.
 > Any extra environment variables must be sent in the pull request with an explanation of how to use them.
 > If you have questions, read the requirements or contact me by email ``alfredo.hermoso@funiber.org``.
-> This challenge must be submitted by Monday 13-02-2023 at 23:59:59 from the receipt of the mail.
+> You have five days to complete and submitted the project from the reception of the mail.
