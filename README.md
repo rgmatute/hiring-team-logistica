@@ -2,28 +2,33 @@ Hello candidate! welcome to the development test for the position of Semi-Senior
 
 #### Inventory management requirements:
 
-1° Authentication
+1) Authentication
 	- by a email and password
 	- a demo user must be provided
 	- no authorization rules must be added, the demo user has all the abilities
-2° Products
+	
+2) Products
 	- seed some products examples in the database
 	- add a search form with these filters 
 		- code
 		- name
 		- category
 		- has stock (boolean)
-  - add a form to edit the main attributes such as name, code, and category
-3° Product categorization
+  	- add a form to edit the main attributes such as name, code, and category
+
+3) Product categorization
 	- all categories must be seed in the database
 	- the maintenance (CRUD) for the categories are optional
-4° Product measurement
+	
+4) Product measurement
 	- this features SHOULD BE handle in one single form
 	- validations are expected, the rules are at your discretion
-5° Stock inquiries
+	
+5) Stock inquiries
 	- this features SHOULD BE handle in one single form
 	- validations are expected, the rules are at your discretion
-6° Product change history
+	
+6) Product change history
 
 The information must be stored in a database.
 A non-relational database can be used (optional).
