@@ -43,4 +43,4 @@ The design of the system is at the developer's discretion and creativity.
 > The whole project will be checked with Docker Compose, manage your dependencies well.
 > Any extra environment variables must be sent in the pull request with an explanation of how to use them.
 > If you have questions, read the requirements or contact me by email ``alfredo.hermoso@funiber.org``.
-> You have five days to complete and submitted the project from the reception of the mail.
+> You have seven days to complete and submitted the project from the reception of the mail.
