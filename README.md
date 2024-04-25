@@ -1,46 +1,41 @@
-Hello candidate! welcome to the development test for the position of Semi-Senior Developer for CT Funiber Ecuador. We present you with an inventory system development challenge with the requirements detailed below.
+## BACKEND ( `development in Lumen - Laravel with PHP 8.1` )
 
-#### Inventory management requirements:
+### PREPARE THE ENVIRONMENT ( sin docker )
 
-1) Authentication
-	- by email and password
-	- a demo user must be provided
-	- no authorization rules must be added, the demo user has all the abilities
-	
-2) Products
-	- seed some products examples in the database
-	- add a search form with these filters 
-		- code
-		- name
-		- category
-		- has stock (boolean)
-  	- add a form to edit the main attributes such as name, code, and category
+`Primero descargar proyecto y acceder a products-api`
 
-3) Product categorization
-	- all categories must be seeded in the database
-	- the maintenance (CRUD) for the categories are optional
-	
-4) Product measurement
-	- this features SHOULD BE handled in one single form
-	- validations are expected, the rules are at your discretion
-	
-5) Stock inquiries
-	- this features SHOULD BE handled in one single form
-	- validations are expected, the rules are at your discretion
-	
-6) Product change history
+- composer install
+- php artisan migrate
+- php artisan db:seed
+- php -S localhost:1902 -t public
 
-The information must be stored in a database.
-A non-relational database can be used (optional).
-Possible technologies to use for front-end development: React, Vue, Angular, Javascript.
-The backend development language is up to you. The provided one is php8.
-The creation of the Entity Relationship Model is at the developer's discretion.
-The binding and validation of the fields is at the discretion of the developer.
-The design of the system is at the developer's discretion and creativity.
+  
+  ![image](https://github.com/rgmatute/funiber-technical-test-products/assets/39324527/831af081-890e-4de6-849b-5bdf5cbe3430)
 
 
-> You must send a pull request to this repository.
-> The whole project will be checked with Docker Compose, manage your dependencies well.
-> Any extra environment variables must be sent in the pull request with an explanation of how to use them.
-> If you have questions, read the requirements or contact me by email ``alfredo.hermoso@funiber.org``.
-> You have seven days to complete and submitted the project from the reception of the mail.
+
+
+## FRONT - END ( `development in Vue-2 with Node v18.17.1` )
+
+### Preparar ambiente ( sin docker )
+- 1) Descargar proyecto y acceder a la carpeta `products-webapp`
+- 2) Aplicar comando `npm install`
+- 3) Aplicat comando `npm start`
+- 4) Acceder a `htts://localhost:9000`
+
+### CATEGORIAS DE LOS PRODUCTOS
+
+![image](https://github.com/rgmatute/funiber-technical-test-products/assets/39324527/23d0a163-0e1b-4e48-908a-731e27279706)
+
+
+### PRODUCTOS
+
+![image](https://github.com/rgmatute/funiber-technical-test-products/assets/39324527/1499af19-2f15-4f1b-889e-cf01052575d0)
+
+### HISTORIAL DE EVENTOS EJECUTADOS EN PRODUCTOS
+
+![image](https://github.com/rgmatute/funiber-technical-test-products/assets/39324527/801f165f-da66-41c2-9b5c-a0ec814dcc2d)
+
+
+
+
