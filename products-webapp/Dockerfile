@@ -20,7 +20,9 @@ FROM nginx:stable-alpine
 COPY --from=build /app/target/build /usr/share/nginx/html
 
 RUN rm /etc/nginx/conf.d/default.conf
-COPY docker/config/nginx/webapp.conf /etc/nginx/conf.d
+
+# Copiar la configuración personalizada de Nginx desde la etapa de construcción
+COPY --from=build /app/docker/config/nginx/webapp.conf /etc/nginx/conf.d
 
 # Exponer el puerto 80
 EXPOSE 80
