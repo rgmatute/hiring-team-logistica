@@ -2,7 +2,7 @@ version: '3'
 
 services:
   products-api:
-    # image: rgmatute/products-api:1.0.0
+    image: rgmatute/products-api:1.0.0
     build: ./products-api
     container_name: products-api
     restart: always
@@ -26,14 +26,16 @@ services:
       MYSQL_DATABASE: funiber_products_test
       MYSQL_ROOT_PASSWORD: funiber-2@24
     ports:
-      - "3306:3306"
+      - "3307:3306"
 
   products-webapp:
-    # image: rgmatute/products-webapp:1.0.0
+    image: rgmatute/products-webapp:1.0.0
     container_name: products-webapp
     build: ./products-webapp
     ports:
       - "9000:9000"
+    depends_on:
+      - products-api
 
   phpmyadmin:
     container_name: products-db-management
