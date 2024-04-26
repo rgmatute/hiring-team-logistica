@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3'
 
 services:
   products-api:
@@ -34,6 +34,7 @@ services:
     build: ./products-webapp
     ports:
       - "9000:9000"
+      - "9096:9096"
 
   phpmyadmin:
     container_name: products-db-management

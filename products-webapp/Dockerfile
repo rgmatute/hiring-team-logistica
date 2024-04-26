@@ -11,7 +11,7 @@ COPY . .
 RUN npm install --force
 
 # Expone el puerto 9000 para el servidor de desarrollo
-EXPOSE 9000
+EXPOSE 9000 9060
 
 # Comando para iniciar el servidor de desarrollo
 CMD ["npm", "start"]
