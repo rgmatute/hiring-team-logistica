@@ -33,7 +33,7 @@ services:
     container_name: products-webapp
     build: ./products-webapp
     ports:
-      - "9000:9000"
+      - "9000:80"
     depends_on:
       - products-api
 
