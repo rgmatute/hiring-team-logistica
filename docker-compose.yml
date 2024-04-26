@@ -34,7 +34,6 @@ services:
     build: ./products-webapp
     ports:
       - "9000:9000"
-      - "9096:9096"
 
   phpmyadmin:
     container_name: products-db-management
