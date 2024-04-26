@@ -1,23 +1,17 @@
-# Usar la imagen oficial de Node.js como base
-FROM node:14-alpine as build
+# Usa la imagen oficial de Node.js
+FROM node:20.12.1
 
-# Configurar el directorio de trabajo
+# Establece el directorio de trabajo
 WORKDIR /app
 
-# Copiar los archivos del proyecto al contenedor
+# Copia todo el proyecto al contenedor
 COPY . .
 
-# Instalar las dependencias
-RUN npm install
+# Instala las dependencias del proyecto
+RUN npm install --force
 
-# Compilar la aplicación para producción
-RUN npm run build
+# Expone el puerto 9000 para el servidor de desarrollo
+EXPOSE 9000
 
-# Configurar Nginx
-FROM nginx:alpine
-
-# Copiar el resultado de la compilación de Vue.js al directorio de Nginx
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# Exponer el puerto 80
-EXPOSE 80
+# Comando para iniciar el servidor de desarrollo
+CMD ["npm", "start"]

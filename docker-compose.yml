@@ -1,8 +1,11 @@
-version: '3'
+version: '3.3'
 
 services:
   products-api:
+    # image: rgmatute/products-api:1.0.0
     build: ./products-api
+    container_name: products-api
+    restart: always
     ports:
       - "1902:1902"
     depends_on:
@@ -15,22 +18,25 @@ services:
       DB_USERNAME: root
       DB_PASSWORD: funiber-2@24
 
-  products-webapp:
-    build: ./products-webapp
-    ports:
-      - "9000:80"
-
   products-db:
-    image: mysql:5.7
+    container_name: products-db
+    restart: always
+    image: mysql:8.0.36
     environment:
-      MYSQL_DATABASE: 'funiber_products_test'
-      MYSQL_USER: 'root'
-      MYSQL_PASSWORD: 'funiber-2@24'
-      MYSQL_ROOT_PASSWORD: 'funiber-2@24'
+      MYSQL_DATABASE: funiber_products_test
+      MYSQL_ROOT_PASSWORD: funiber-2@24
     ports:
       - "3306:3306"
 
+  products-webapp:
+    # image: rgmatute/products-webapp:1.0.0
+    container_name: products-webapp
+    build: ./products-webapp
+    ports:
+      - "9000:9000"
+
   phpmyadmin:
+    container_name: products-db-management
     image: phpmyadmin/phpmyadmin
     ports:
       - "8081:80"
