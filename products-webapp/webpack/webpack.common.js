@@ -36,7 +36,8 @@ module.exports = async (env, options) => {
         app: './src/main/webapp/app/main.ts',
       },
       output: {
-        path: resolve('target/classes/static/'),
+        // path: resolve('target/classes/static/'),
+        path: resolve('target/build/'),
       },
       resolve: {
         extensions: ['.ts', '.js', '.vue', '.json'],
